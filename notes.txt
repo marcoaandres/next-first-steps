@@ -1,0 +1,15 @@
+
+* Muchas personas prefieren trabajar con Next por el seo-frendly, next permite agregar metatags de una forma muy facil, como ecomerce, paginas para indexar en los motores de busqueda
+
+* Por default todos los componentes son estos  serverComponentes, esto significa que se ejecuta en el servidor, si ponemos algún console.log() no lo veremos en la consola del navegador , se ejecutara una vez que el servidor cree el componente, si queremos verlo debemos buscarlo en la consola donde levantamos el proyecto
+
+* Se puede agrupar ciertas paginas para poder tener un layout general para esas paginas dentro de una carpeta
+esa carpeta puede tener un nombre como general dentro tener paginas como about, contact, etc
+pero eso hara que se cree una ruta como la siguiente general/contact o general/about
+si queremos agrupar pero que no se tome en cuenta esa carpeta para las rutas, la carpeta agrupadora debe estar entre parentesis (general) así se crearan solo las rutas siguientes por ejemplo /contacto /about
+
+* se recomienda que la mayoria de nuestro sitio web sea generado del lado del server 'use server' (por default), sin embargo habrá algunos componentes que necesitarán ser creados del lado del cliente 'use client' para agregar interactividad con el usuario, que sea geenrado del lado del cliente nos ayudara a tener mejor scort o puntaje en las diferentes aplicaciones que usan los buscadores como googleLiveHouse
+
+* Por default next hace un "prefetch" esto hace que se hagan peticiones a las diferentes vistas del proyecto antes de dar click en ellas para que sea mucho más rapida la navegación y se sienta como una SPA auqneu en realidad todo se genera del lado del servidor, este comportamiento se puede cambiar en los componentes diciendo que prefetch={false}
+
+

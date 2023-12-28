@@ -14,9 +14,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // * Este layout impactara en todas nuestras pagnoas de la aplicación
+  // * solo modificar cuando se necesite modificar la estructura del layuot a nivel global
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <p>Root Layout</p>
+        {children}
+      </body>
     </html>
   )
 }
